@@ -1,10 +1,11 @@
-declare enum NetworkRequestStatusEnum {
+export enum NetworkRequestStatusEnum {
   IN_PROGRESS = 'in-progress',
   SUCCESS = 'success',
   ERROR = 'error',
+  INVALIDATED = 'invalidated', // an invalidated request no longer have relevance for the current UI
 }
 
-declare enum NetworkRequestMethodsEnum {
+export enum NetworkRequestMethodsEnum {
   GET = 'get',
   POST = 'post',
   PUT = 'put',
@@ -16,11 +17,11 @@ declare enum NetworkRequestMethodsEnum {
   TRACE = 'trace',
 }
 
-declare interface INetworkRequestError extends Error {
+export interface INetworkRequestError extends Error {
   code?: string,
 }
 
-declare interface INetworkRequest {
+export interface INetworkRequest {
   id: string,
   status: NetworkRequestStatusEnum,
   url: string,
@@ -31,8 +32,4 @@ declare interface INetworkRequest {
   startedAt: Date,
   finishedAt?: Date,
   error?: INetworkRequestError,
-}
-
-declare interface Dictionary<T> {
-  [Key: string]: T,
 }

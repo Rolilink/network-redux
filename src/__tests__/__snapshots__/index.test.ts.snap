@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`makeReduxNetwork.reducer should be able to add a network request 1`] = `
+Object {
+  "entities": Object {
+    "a": Object {
+      "id": "a",
+      "method": "get",
+      "startedAt": 2020-07-13T20:37:33.959Z,
+      "status": "in-progress",
+      "url": "localhost:3000/fakeURL/a",
+    },
+  },
+  "ids": Array [
+    "a",
+  ],
+}
+`;
+
+exports[`makeReduxNetwork.reducer should be able to remove a network request 1`] = `
+Object {
+  "entities": Object {
+    "b": Object {
+      "id": "b",
+      "method": "get",
+      "startedAt": 2020-07-13T20:37:33.959Z,
+      "status": "in-progress",
+      "url": "localhost:3000/fakeURL/b",
+    },
+  },
+  "ids": Array [
+    "b",
+  ],
+}
+`;
+
+exports[`makeReduxNetwork.reducer should be able to remove all network requests 1`] = `
+Object {
+  "entities": Object {},
+  "ids": Array [],
+}
+`;
+
+exports[`makeReduxNetwork.reducer should be able to update a network request 1`] = `
+Object {
+  "entities": Object {
+    "a": Object {
+      "id": "a",
+      "method": "get",
+      "startedAt": 2020-07-13T20:37:33.959Z,
+      "status": "success",
+      "url": "localhost:3000/fakeURL/a",
+    },
+  },
+  "ids": Array [
+    "a",
+  ],
+}
+`;
