@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest",
     "tsc": "tsc",
-    "ci": "npm run clean && npm run tsc",
+    "prepublish": "npm test && npm run clean && npm run tsc",
     "clean": "rimraf dist"
   },
   "devDependencies": {
