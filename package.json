@@ -1,12 +1,18 @@
 {
   "name": "@rolilink/redux-network",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A group of actions, reducers and selectors to handle networking on redux",
-  "main": "src/index.ts",
   "repository": "git@github.com:Rolilink/redux-network.git",
   "author": "Rolando Perez <me@rolilink.com>",
   "license": "MIT",
-  "files": ["dist", "src"],
+  "files": [
+    "dist/*.js",
+    "dist/*.js.map",
+    "dist/typings.d.ts",
+    "src"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
   "scripts": {
     "test": "jest",
     "tsc": "tsc",
