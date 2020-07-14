@@ -1,4 +1,4 @@
-import makeReduxNetwork from '..';
+import { makeReduxNetwork } from '..';
 import { INetworkRequest, NetworkRequestStatusEnum, NetworkRequestMethodsEnum } from '../types';
 
 const requestA: INetworkRequest = {

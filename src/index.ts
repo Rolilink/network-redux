@@ -50,4 +50,6 @@ const makeReduxNetwork = (
   };
 };
 
-export default makeReduxNetwork;
+export {
+  makeReduxNetwork,
+};

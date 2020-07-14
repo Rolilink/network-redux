@@ -1,6 +1,6 @@
 {
   "name": "@rolilink/redux-network",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A group of actions, reducers and selectors to handle networking on redux",
   "repository": "git@github.com:Rolilink/redux-network.git",
   "author": "Rolando Perez <me@rolilink.com>",
