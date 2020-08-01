@@ -33,7 +33,7 @@ const makeReduxNetwork = (
       upsertNetworkRequest: networkEntityAdapter.upsertOne,
       upsertNetworkRequests: networkEntityAdapter.upsertMany,
       removeNetworkRequest: networkEntityAdapter.removeOne,
-      removeNetworkRequests: networkEntityAdapter.removeAll,
+      removeNetworkRequests: networkEntityAdapter.removeMany,
       removeAllNetworkRequests: networkEntityAdapter.removeAll,
     },
     extraReducers,
